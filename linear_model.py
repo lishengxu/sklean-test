@@ -5,3 +5,5 @@ clf = linear_model.LinearRegression()
 clf.fit([[0, 0], [1, 1], [2, 2]], [0, 1, 2])
 
 print clf.coef_
+
+print clf.predict([[1.5, 1.5]])

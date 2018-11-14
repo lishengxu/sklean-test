@@ -18,3 +18,13 @@ print featureScaling(data)
 
 data = [1, 1, 1, 1]
 print featureScaling(data)
+
+from sklearn.preprocessing import MinMaxScaler
+import numpy
+
+weights = numpy.array([[115.], [140.], [175.]])
+scaler = MinMaxScaler()
+resaled_weight = scaler.fit_transform(weights)
+
+print scaler.data_min_, scaler.data_max_, scaler.data_range_
+print resaled_weight
